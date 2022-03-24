@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>FadeInUp Effect</title>
+    <link rel="stylesheet" href="css/fade.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"
+        <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/fadeInUp.js"></script>
+    <!-- 
+        fadeIn 효과
+        1) 효과를 적용할 대상에 .fade를 추가한다
+        2) 효과가 완료된 후 상태를 먼저 스타일한다
+        3) .fade에게 position: relative로 좌표를 지정하고 불투명도를 0으로 선언한다
+        4) transition으로 자연스런 전환 효과를 추가하는 대신 script에서 animate시킨다
+     -->
+</head>
+<body>
+    <div id="skip">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <header id="header">header</header>
+    <section id="content">
+        <div class="tit_bg"></div>
+        <ul class="vision area">
+            <li>
+                <img src="images/img_vision01.jpg" alt="" class="fade">
+                <div class="txt">
+                    <strong>고객들이 신뢰하는 <span class="red">LG</span></strong>
+                    <p>탁월한 품질과 브랜드 가치로 고객을 감동시켜 <br>
+                    고객 스스로 LG가 최고라고 인정하게 만드는 것</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/img_vision02.jpg" alt="" class="fade">
+                <div class="txt">
+                    <strong>투자자들에게 가장 매력적인 <span class="red">LG</span></strong>
+                    <p>높은 투자수익률로 투자자들에게 <br>
+                    가장 매력적인 가치를 지닌 회사로 인정받는 것
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="images/img_vision03.jpg" alt="" class="fade">
+                <div class="txt">
+                    <strong>인재들이 선망하는 <span class="red">LG</span></strong>
+                    <p>최고의 인재가 모여 주인의식을 가지고 <br>
+                    신명나게 일할 수 있는 최고의 직장이 되는 것</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/img_vision04.jpg" alt="" class="fade">
+                <div class="txt">
+                    <strong>경쟁사들이 두려워하면서도 <br>
+                    배우고 싶어하는 <span class="red">LG</span></strong>
+                    <p>일등 경영을 통해 탁월한 성과를 창출함으로써 <br>
+                    경쟁사들이 두려워하면서도 배우고 싶어하는 기업이 되는 것</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer id="footer">footer</footer>
+</body>
+</html>
